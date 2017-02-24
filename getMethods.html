@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A method named getFullName, which returns full name.</p>
+    
+
+<p>A method named getAge, which return value of 2016 year born.</p>
+
+<p id="fullName"></p>
+<p id="yearBorn"></p>
+
+
+<script>
+    
+var person = {
+    firstName: "Rachel",
+    lastName : "Brown",
+    yearBorn : 2016,
+    fullName : function() {
+        return this.firstName + " " + this.lastName; 
+            }
+                };
+
+document.getElementById("fullName").innerHTML = person.fullName();
+
+
+
+
+var person = {
+    firstName: "Rachel",
+    lastName : "Brown",
+    yearBorn : 2016,
+    getAge : function() {
+        return this.yearBorn; 
+            }
+                };
+
+document.getElementById("yearBorn").innerHTML = person.getAge();
+
+    
+
+</script>
+</body>
+</html>
